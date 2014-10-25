@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+a { text-decoration:none; margin:0 }
+
+body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
+
+.top { width:100%;}
+.topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat; border:1px solid green}
+.search {width:210px; height:50x; margin:20px  0 10px 770px; padding:0; position:absolute; border:1px solid red }
+.search input[type="text"] {float:left; margin:0 0 0 30px; border: 2px solid #d4d4d4; padding:5px 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color:#999; }
+.buttonSearch {position:absolute; margin:0; padding:0; height:30px; width:30px; }
+
+#header { width:980px; border:1px solid magenta; float:left; display:block ; margin:0 0 10px 0}
+.logo {  float:left; width:232px; margin:20px 17px 10px 0; }
+.logo a { display:block; height:56px; width:232px; background:url("../img/slim360-logo.png") no-repeat; text-indent:-9999px }
+.bannerHeader {float:left; height:90px; width:728px }
+
+/*mega topNav dropdown*/
+/* Drop Down */
+ 
+.dropdown_1column, 
+.dropdown_2columns, 
+.dropdown_3columns, 
+.dropdown_4columns,
+.dropdown_5columns {
+    margin:0 auto 0 104px;;
+    float:left;
+    position:absolute;
+    left:-999em; /* Hides the drop down */
+    text-align:left;
+    padding:10px 5px 10px 5px;
+    border:1px solid #777777;
+    border-top:none;
+     
+    /* Gradient background */
+    background:#fff;
+	width:100%;
+  
+}
+ 
+.dropdown_1column {width: 960px;}
+.dropdown_2columns {width: 970px; border-bottom:4px solid #00aeef; z-index:99999}
+.dropdown_3columns {width: 420px;}
+.dropdown_4columns {width: 560px;}
+.dropdown_5columns {width: 700px;}
+ 
+#topNav li:hover .dropdown_1column, 
+#topNav li:hover .dropdown_2columns, 
+#topNav li:hover .dropdown_3columns,
+#topNav li:hover .dropdown_4columns,
+#topNav li:hover .dropdown_5columns {
+    left:-1px;
+    top:auto;
+}
+ 
+/* Columns */
+ 
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+	z-index:9999;
+}
+.col_1 {width:130px;}
+.col_2 {width:270px;}
+.col_3 {width:410px;}
+.col_4 {width:550px;}
+.col_5 {width:690px;}
+ 
+/* Right alignment */
+ 
+#topNav .topNav_right {
+    float:right;
+    margin-right:0px;
+}
+#topNav li .align_right {
+
+}
+#topNav li:hover .align_right {
+    left:auto;
+    right:-1px;
+    top:auto;
+	z-index:9999
+}
+ 
+
+.gridContainer { border:1px solid purple }
+
+#mainNav { display:block; width:980px; clear:both; border:1px solid red; margin:10px 0 10px 0}
+ 
+/* topnav */
+#topnav li { display: inline; text-transform:uppercase; color:#333}
+#topnav a { color:#111; text-decoration:none}
+
+
+/* main Nav */
+#topNav {
+    background:url("../img/topnav.png") no-repeat;
+    width: 979px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+	
+}
+
+#topNav li, #topNav a {
+    height: 40px;
+    display: block;
+}
+
+#topNav li {
+    float: left;
+    list-style: none;
+    display: inline;
+    text-indent: -9999em;
+}
+
+/*#topNavLink1, #topNavLink2, #topNavLink3, #topNavLink4, #topNavLink5, #topNavLink6, #topNavLink7, #topNavLink8, #topNavLink9 { border:1px solid purple }*/
+
+#topNavLink1 { width: 66px; }
+#topNavLink2 { width: 86px; }
+#topNavLink3 { width: 75px; }
+#topNavLink4 { width: 82px; }
+#topNavLink5 { width: 114px; }
+#topNavLink6 { width: 168px; }
+#topNavLink7 { width: 127px; }
+#topNavLink8 { width: 100px; }
+#topNavLink9 { width: 143px; }
+
+
+#topNavLink1 a:hover { background:url("../img/topnav.png")  -1px  -42px no-repeat; }
+#topNavLink2 a:hover { background:url("../img/topnav.png") -69px -42px no-repeat; }
+#topNavLink3 a:hover { background:url("../img/topnav.png") -157px -42px no-repeat; }
+#topNavLink4 a:hover { background:url("../img/topnav.png") -234px -42px no-repeat; }
+#topNavLink5 a:hover { background:url("../img/topnav.png") -318px -42px no-repeat; }
+#topNavLink6 a:hover { background:url("../img/topnav.png") -434px -42px no-repeat; }
+#topNavLink7 a:hover { background:url("../img/topnav.png") -604px -42px no-repeat; }
+#topNavLink8 a:hover { background:url("../img/topnav.png") -733px -42px no-repeat; }
+#topNavLink9 a:hover { background:url("../img/topnav.png") -835px -42px no-repeat; }
+
+
+/*debug*/
+
+.newsblockLeft { border:1px solid red }
+.newsblockRight { border:1px solid cyan }
+
+.newshighlight, .newsblockLeft { float:left }
+.newshighlight img {
+  height: 372px;
+  width: 559px;
+}
+
+
+.newsFirstright, ..newsblockLeft { float:right }
+.newsSecondright { float:right }
+
+
+.newshighlight  {  width:560px;}
+.newsblockLeft  { width:560px; margin-right:10px; }
+.newsblockRight  { float:left; width:408px;  }
+
+.newsFirstright { margin-bottom:10px }
+
+
+.category { position:absolute; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:9; text-transform:lowercase;   }
+.category strong { font-weight:lighter }
+.category a { color:#fff }
+.borderImg { position:absolute; width:100px; padding:3px 3px; margin-top:-2px }
+.headlineFirst { width:560px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+.headlineSecond { width:408px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+.headlineThird { width:408px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+
+/*.headline { position:absolute;  width:90%; height:3em; background-color:#ecf3e8;  opacity: 0.8;  margin:-45px 0 0 0; padding:5px 2px 1px 5px; z-index:1 } */
+.headlineFirst h2, .headlineSecond h2, .headlineThird h2 { color:#000; font-weight:lighter; padding-left:10px}
+
+/* */
+
+/* colors */
+.color1 { background-color:#00aeef; color:#fff; font-weight:bold } 
+.color2 { background-color:#f62e81; color:#fff; font-weight:bold } 
+.color3 { background-color:#f6d82e; color:#fff; font-weight:bold } 
+.color4 { background-color:#29db61; color:#fff; font-weight:bold } 
+.color5 { background-color:#7337dc; color:#fff; font-weight:bold } 
+.color6 { background-color:#ff6d05; color:#fff; font-weight:bold } 
+.color7 { background-color:#ff0550; color:#fff; font-weight:bold } 
+.color8 { background-color:#0579ff; color:#fff; font-weight:bold } 
+.color9 { background-color:#d627dc; color:#fff; font-weight:bold } 
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
