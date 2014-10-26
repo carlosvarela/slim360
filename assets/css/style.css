@@ -13,7 +13,7 @@ img, object, embed, video {
 
 a { text-decoration:none; margin:0 }
 
-body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat!important; background-size:100% }
+body { background:#fafafa url("../img/bg01.png") 50px 0 no-repeat!important; background-size:100% }
 
 .top {float:left; width:55%; margin:0 0 10px 0; height:60px; background:#fff;}
 .topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat;}
@@ -143,8 +143,8 @@ body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat!important; bac
 }
 
 
-.newsFirstright, ..newsblockLeft { float:right }
-.newsSecondright { float:right }
+.newsFirstright { float:right; height:181px }
+.newsSecondright { float:right; }
 
 
 .newshighlight  {  width:560px;}
@@ -154,17 +154,14 @@ body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat!important; bac
 .newsFirstright { margin-bottom:10px }
 
 
-.category { position:absolute; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:999; text-transform:lowercase;   }
-@-moz-document url-prefix() { 
-.category { position:relative!important; top:-50px; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:999; text-transform:lowercase;   }
+.category { position:relative!important; top:-70px; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:9999; text-transform:lowercase;   }
 
-}
 .category strong { font-weight:lighter }
 .category a { color:#fff }
 .borderImg { position:absolute; width:100px; padding:3px 3px; margin-top:-2px }
-.headlineFirst { width:560px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
-.headlineSecond { width:408px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
-.headlineThird { width:408px; float:left; margin-top:-55px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+.headlineFirst { width:560px; float:left; margin-top:-71px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+.headlineSecond { width:408px; float:left; margin-top:-72px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
+.headlineThird { width:408px; float:left; margin-top:-71px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
 
 /*.headline { position:absolute;  width:90%; height:3em; background-color:#ecf3e8;  opacity: 0.8;  margin:-45px 0 0 0; padding:5px 2px 1px 5px; z-index:1 } */
 .headlineFirst h2, .headlineSecond h2, .headlineThird h2 { color:#000; font-weight:lighter; padding-left:10px}
