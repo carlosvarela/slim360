@@ -151,8 +151,12 @@ body { background:#fafafa url("../img/bg01.png") 50px 0 no-repeat!important; bac
 
 .category { position:relative; display:block; width:100px;  margin:0; padding:3px 5px 2px 0px;top:-60px; left:0px; z-index:9; }
 
-span.borderImg   { position:absolute; width:100px; height:3px; margin:0; padding:3px 5px 2px 0px;top:-160px; left:0px; z-index:9999; border:1px solid magenta }
-
+/*.borderImg   { position:absolute; width:100px; height:3px; margin:0; padding:3px 5px 2px 0px;top:-160px; left:0px; z-index:9999; border:1px solid magenta }*/
+span.borderImg {
+width: 100px;
+height: 5px;
+position: absolute;
+}
 .headlineFirst { width:560px; float:left; margin-top:-72px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
 .headlineSecond { width:409px; float:left; margin-top:-72px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
 .headlineThird { width:409px; float:left; margin-top:-72px;  background-color:#ecf3e8;  opacity: 0.8; z-index:1 }
