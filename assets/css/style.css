@@ -13,11 +13,11 @@ img, object, embed, video {
 
 a { text-decoration:none; margin:0 }
 
-body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
+body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat fixed; background-size:100% }
 
-.top { width:100%;}
+.top {float:left; width:55%; margin:0 0 10px 0; height:60px; background:#fff;}
 .topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat;}
-.search {width:210px; height:50x; margin:20px  0 10px 770px; padding:0; position:absolute }
+.search {width:210px; height:50x; margin:20px  0 10px 760px; padding:0; position:absolute }
 .search input[type="text"] {float:left; margin:0 0 0 30px; border: 2px solid #d4d4d4; padding:5px 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color:#999; }
 .buttonSearch {position:absolute; margin:0; padding:0; height:30px; width:30px; }
 
@@ -201,22 +201,13 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
-	width: 90.675%;
+	width: 100%;
 	padding-left: 1.1625%;
 	padding-right: 1.1625%;
 }
 }
 
-/*769 px a 1232 px */
 
-@media only screen and (min-width: 769px) {
-.gridContainer {
-	width: 68.2%;
-	max-width: 1232px;
-	padding-left: 0.9%;
-	padding-right: 0.9%;
-	margin:0 auto;
-}
 
 footer { width:90%; display:block; clear:both; margin:0 auto; text-align:center; color:#fff; margin:20px 0 0 0; padding:5px 5px }
 footer a { color:#fff!important }
