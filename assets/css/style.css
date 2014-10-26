@@ -13,7 +13,7 @@ img, object, embed, video {
 
 a { text-decoration:none; margin:0 }
 
-body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat fixed; background-size:100% }
+body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat!important; background-size:100% }
 
 .top {float:left; width:55%; margin:0 0 10px 0; height:60px; background:#fff;}
 .topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat;}
@@ -154,7 +154,11 @@ body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat fixed; backgro
 .newsFirstright { margin-bottom:10px }
 
 
-.category { position:absolute; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:9; text-transform:lowercase;   }
+.category { position:absolute; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:999; text-transform:lowercase;   }
+@-moz-document url-prefix() { 
+.category { position:relative!important; top:-50px; padding:5px 15px 5px 15px; margin:-70px 0 0 0; z-index:999; text-transform:lowercase;   }
+
+}
 .category strong { font-weight:lighter }
 .category a { color:#fff }
 .borderImg { position:absolute; width:100px; padding:3px 3px; margin-top:-2px }
@@ -180,32 +184,12 @@ body { background:#fafafa url("../img/bg01.jpg") 50px 0 no-repeat fixed; backgro
 
 
 
-/*  480 px and less. */
-
-.gridContainer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 87.36%;
-	padding-left: 1.82%;
-	padding-right: 1.82%;
-}
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-
-/* 481 px a 768 px. */
-
-@media only screen and (min-width: 481px) {
 .gridContainer {
 	width: 100%;
 	padding-left: 1.1625%;
 	padding-right: 1.1625%;
 }
-}
+
 
 
 
