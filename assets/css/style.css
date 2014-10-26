@@ -16,12 +16,12 @@ a { text-decoration:none; margin:0 }
 body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 
 .top { width:100%;}
-.topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat; border:1px solid green}
-.search {width:210px; height:50x; margin:20px  0 10px 770px; padding:0; position:absolute; border:1px solid red }
+.topbrands {  float:left; height:20px; width:980px; padding:20px 0 20px 0; margin:0 0 10px 0; background:#fff url(../img/topbrands.jpg) no-repeat;}
+.search {width:210px; height:50x; margin:20px  0 10px 770px; padding:0; position:absolute }
 .search input[type="text"] {float:left; margin:0 0 0 30px; border: 2px solid #d4d4d4; padding:5px 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color:#999; }
 .buttonSearch {position:absolute; margin:0; padding:0; height:30px; width:30px; }
 
-#header { width:980px; border:1px solid magenta; float:left; display:block ; margin:0 0 10px 0}
+#header { width:980px; float:left; display:block ; margin:0 0 10px 0}
 .logo {  float:left; width:232px; margin:20px 17px 10px 0; }
 .logo a { display:block; height:56px; width:232px; background:url("../img/slim360-logo.png") no-repeat; text-indent:-9999px }
 .bannerHeader {float:left; height:90px; width:728px }
@@ -83,7 +83,32 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 .col_3 {width:410px;}
 .col_4 {width:550px;}
 .col_5 {width:690px;}
- 
+ .col1, .col2, .col3, .col4, .col5, .col6 { margin: 10px 0; padding: 0 10px; float: left; }
+/* 1 Column */
+.container-1 { width: 170px; }
+.container-1 .col1 { width: 100%; }
+/* 2 Columns */
+.container-2 { width: 270px; }
+.container-2 .col1 { width: 50%; }
+.container-2 .col2 { width: 100%; }
+/* 3 Columns */
+.container-3 { width: 400px; }
+.container-3 .col1 { width: 33.33%; }
+.container-3 .col2 { width: 66.66%; }
+.container-3 .col3 { width: 100%; }
+/* 4 Columns */
+.container-4 { width: 500px; }
+.container-4 .col1 { width: 25%; }
+.container-4 .col2 { width: 50%; }
+.container-4 .col3 { width: 75%; }
+.container-4 .col4 { width: 100%; }
+/* 5 Column */
+.container-5 { width: 600px; }
+.container-5 .col1 { width: 20%; }
+.container-5 .col2 { width: 40% }
+.container-5 .col3 { width: 60% }
+.container-5 .col4 { width: 80% }
+.container-5 .col5 { width: 100% }
 /* Right alignment */
  
 #topNav .topNav_right {
@@ -101,9 +126,8 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 }
  
 
-.gridContainer { border:1px solid purple }
 
-#mainNav { display:block; width:980px; clear:both; border:1px solid red; margin:10px 0 10px 0}
+#mainNav { display:block; width:980px; clear:both; margin:10px 0 10px 0}
  
 /* topnav */
 #topnav li { display: inline; text-transform:uppercase; color:#333}
@@ -135,31 +159,30 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 /*#topNavLink1, #topNavLink2, #topNavLink3, #topNavLink4, #topNavLink5, #topNavLink6, #topNavLink7, #topNavLink8, #topNavLink9 { border:1px solid purple }*/
 
 #topNavLink1 { width: 66px; }
-#topNavLink2 { width: 86px; }
-#topNavLink3 { width: 75px; }
-#topNavLink4 { width: 82px; }
-#topNavLink5 { width: 114px; }
-#topNavLink6 { width: 168px; }
-#topNavLink7 { width: 127px; }
-#topNavLink8 { width: 100px; }
-#topNavLink9 { width: 143px; }
+#topNavLink2 { width: 91px; }
+#topNavLink3 { width: 77px; }
+#topNavLink4 { width: 82px;  }
+#topNavLink5 { width: 117px;  }
+#topNavLink6 { width: 169px; }
+#topNavLink7 { width: 128px; }
+#topNavLink8 { width: 102px; }
+#topNavLink9 { width: 147px; }
 
 
-#topNavLink1 a:hover { background:url("../img/topnav.png")  -1px  -42px no-repeat; }
-#topNavLink2 a:hover { background:url("../img/topnav.png") -69px -42px no-repeat; }
-#topNavLink3 a:hover { background:url("../img/topnav.png") -157px -42px no-repeat; }
-#topNavLink4 a:hover { background:url("../img/topnav.png") -234px -42px no-repeat; }
-#topNavLink5 a:hover { background:url("../img/topnav.png") -318px -42px no-repeat; }
-#topNavLink6 a:hover { background:url("../img/topnav.png") -434px -42px no-repeat; }
-#topNavLink7 a:hover { background:url("../img/topnav.png") -604px -42px no-repeat; }
-#topNavLink8 a:hover { background:url("../img/topnav.png") -733px -42px no-repeat; }
-#topNavLink9 a:hover { background:url("../img/topnav.png") -835px -42px no-repeat; }
+#topNavLink1 a:hover { background:url("../img/topnav.png")  0px  -41px no-repeat; }
+#topNavLink2 a:hover { background:url("../img/topnav.png") -66px -41px no-repeat; }
+#topNavLink3 a:hover { background:url("../img/topnav.png") -157px -41px no-repeat; }
+#topNavLink4 a:hover { background:url("../img/topnav.png") -234px -41px no-repeat; }
+#topNavLink5 a:hover { background:url("../img/topnav.png") -316px -41px no-repeat; }
+#topNavLink6 a:hover { background:url("../img/topnav.png") -433px -41px no-repeat; }
+#topNavLink7 a:hover { background:url("../img/topnav.png") -602px -41px no-repeat; }
+#topNavLink8 a:hover { background:url("../img/topnav.png") -730px -41px no-repeat; }
+#topNavLink9 a:hover { background:url("../img/topnav.png") -832px -41px no-repeat; }
 
 
 /*debug*/
 
-.newsblockLeft { border:1px solid red }
-.newsblockRight { border:1px solid cyan }
+
 
 .newshighlight, .newsblockLeft { float:left }
 .newshighlight img {
