@@ -12,6 +12,8 @@
 <title>SLIM360</title>
 <link href="assets/css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/dropdown.css" rel="stylesheet" type="text/css">
+
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:site_name" content="SLIM360"/>
 <meta property="og:title" content="SLIM360"/>
@@ -48,33 +50,23 @@
 
 
 <nav id="mainNav" >
-<ul id="topNav">
+<ul id="topNav" class="nav clearfix animated">
 <li id="topNavLink1"><a href="#" title="Tudo">Tudo</a>
-      <div class="dropdown_2columns">
-     
-            <div class="col_2">
-                <h2>Welcome !</h2>
-            </div>
-     
-            <div class="col_2">
-                <p>Hi and welcome here ! This is a showcase of the possibilities of this awesome Mega Drop Down Menu.</p>             
-                <p>This item comes with a large range of prepared typographic stylings such as headings, lists, etc.</p>             
-            </div>
-     
-            <div class="col_2">
-                <h2>Cross Browser Support</h2>
-            </div>
-             
-            <div class="col_1">
-                <img src="assets/img/news-01-dropdown.png" width="270" height="180" alt="" />
-            </div>
-             
-            <div class="col_1">
-                <p>Receba todas as nossas 
-notícias direto em seu e-mail!</p>
-            </div>
-           
-        </div><!-- End 2 columns container -->
+   <div class="container-1">
+           <div class="col1" style="background:url(assets/img/news-01-dropdown.png) no-repeat; width:220px; height:180px; margin-right:10px">
+           <div><img src="assets/img/news-01-dropdown.png"/></div>
+          </div>
+           <div class="col1" style="background:url(assets/img/news-02-dropdown.png) no-repeat; width:220px; height:180px; margin-right:10px">
+           <div><img src="assets/img/news-02-dropdown.png"/></div>
+          </div>
+           <div class="col1" style="background:url(assets/img/button-more.png) no-repeat; width:100px; height:180px;">
+           <div><img src="assets/img/button-more.png"/></div>
+          </div>
+          <div class="col1" style="background:url(assets/img/newletters.png) no-repeat; width:200px; height:180px; float:right">
+           <div><img src="assets/img/newletters.png"/></div>
+          </div>
+         
+  </div>
 </li>     
 <li id="topNavLink2"><a href="#" title="Noticias">Notícias</a></li>       
 <li id="topNavLink3"><a href="#" title="Dicas">Dicas</a></li>        
@@ -139,6 +131,15 @@ notícias direto em seu e-mail!</p>
     e.preventDefault();
     $.backstretch('assets/img/bg02.jpg');
   });
+  
+  $(function(){
+	$('.animated > li').hover(function(){
+		$(this).find('div[class^="container-"]').stop().slideDown('fast');
+	},
+	function(){
+		$(this).find('div[class^="container-"]').stop().slideUp('slow');
+	});
+});
 </script>
 
 </body>

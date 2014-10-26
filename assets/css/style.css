@@ -26,35 +26,6 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 .logo a { display:block; height:56px; width:232px; background:url("../img/slim360-logo.png") no-repeat; text-indent:-9999px }
 .bannerHeader {float:left; height:90px; width:728px }
 
-/*mega topNav dropdown*/
-/* Drop Down */
- 
-.dropdown_1column, 
-.dropdown_2columns, 
-.dropdown_3columns, 
-.dropdown_4columns,
-.dropdown_5columns {
-    margin:0 auto 0 104px;;
-    float:left;
-    position:absolute;
-    left:-999em; /* Hides the drop down */
-    text-align:left;
-    padding:10px 5px 10px 5px;
-    border:1px solid #777777;
-    border-top:none;
-     
-    /* Gradient background */
-    background:#fff;
-	width:100%;
-  
-}
- 
-.dropdown_1column {width: 960px;}
-.dropdown_2columns {width: 970px; border-bottom:4px solid #00aeef; z-index:99999}
-.dropdown_3columns {width: 420px;}
-.dropdown_4columns {width: 560px;}
-.dropdown_5columns {width: 700px;}
- 
 #topNav li:hover .dropdown_1column, 
 #topNav li:hover .dropdown_2columns, 
 #topNav li:hover .dropdown_3columns,
@@ -64,53 +35,7 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
     top:auto;
 }
  
-/* Columns */
- 
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5 {
-    display:inline;
-    float: left;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 5px;
-	z-index:9999;
-}
-.col_1 {width:130px;}
-.col_2 {width:270px;}
-.col_3 {width:410px;}
-.col_4 {width:550px;}
-.col_5 {width:690px;}
- .col1, .col2, .col3, .col4, .col5, .col6 { margin: 10px 0; padding: 0 10px; float: left; }
-/* 1 Column */
-.container-1 { width: 170px; }
-.container-1 .col1 { width: 100%; }
-/* 2 Columns */
-.container-2 { width: 270px; }
-.container-2 .col1 { width: 50%; }
-.container-2 .col2 { width: 100%; }
-/* 3 Columns */
-.container-3 { width: 400px; }
-.container-3 .col1 { width: 33.33%; }
-.container-3 .col2 { width: 66.66%; }
-.container-3 .col3 { width: 100%; }
-/* 4 Columns */
-.container-4 { width: 500px; }
-.container-4 .col1 { width: 25%; }
-.container-4 .col2 { width: 50%; }
-.container-4 .col3 { width: 75%; }
-.container-4 .col4 { width: 100%; }
-/* 5 Column */
-.container-5 { width: 600px; }
-.container-5 .col1 { width: 20%; }
-.container-5 .col2 { width: 40% }
-.container-5 .col3 { width: 60% }
-.container-5 .col4 { width: 80% }
-.container-5 .col5 { width: 100% }
-/* Right alignment */
- 
+
 #topNav .topNav_right {
     float:right;
     margin-right:0px;
@@ -179,6 +104,33 @@ body { background:url("../img/bg01.jpg") no-repeat fixed; background-size:100% }
 #topNavLink8 a:hover { background:url("../img/topnav.png") -730px -41px no-repeat; }
 #topNavLink9 a:hover { background:url("../img/topnav.png") -832px -41px no-repeat; }
 
+/* dropdow */
+.col1, .col2, .col3, .col4, .col5, .col6 { margin: 10px 0; padding: 0 10px; float: left; }
+/* 1 Column */
+.container-1 { width: 170px; }
+.container-1 .col1 { width: 100%; }
+/* 2 Columns */
+.container-2 { width: 270px; }
+.container-2 .col1 { width: 50%; }
+.container-2 .col2 { width: 100%; }
+/* 3 Columns */
+.container-3 { width: 400px; }
+.container-3 .col1 { width: 33.33%; }
+.container-3 .col2 { width: 66.66%; }
+.container-3 .col3 { width: 100%; }
+/* 4 Columns */
+.container-4 { width: 500px; }
+.container-4 .col1 { width: 25%; }
+.container-4 .col2 { width: 50%; }
+.container-4 .col3 { width: 75%; }
+.container-4 .col4 { width: 100%; }
+/* 5 Column */
+.container-5 { width: 600px; }
+.container-5 .col1 { width: 20%; }
+.container-5 .col2 { width: 40% }
+.container-5 .col3 { width: 60% }
+.container-5 .col4 { width: 80% }
+.container-5 .col5 { width: 100% }
 
 /*debug*/
 
